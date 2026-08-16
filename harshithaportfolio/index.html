@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellanki Harshitha | B.Tech CS Student & Developer</title>
+    <meta name="description"
+        content="Portfolio of Vellanki Harshitha — B.Tech Computer Science student passionate about Python, Machine Learning, and building innovative software solutions.">
+    <meta name="keywords"
+        content="Vellanki Harshitha, Computer Science, Python, Machine Learning, Data Analytics, Web Development, Portfolio">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">VH.</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:12px;">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Open to Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hello, I'm<br>
+                    <span class="gradient-text">Harshitha</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span id="typewriterText"></span><span class="typewriter">&nbsp;</span>
+                </p>
+                <p class="hero-description">
+                    Motivated B.Tech Computer Science student with a strong foundation in programming,
+                    databases, and problem-solving. Experienced in developing academic projects using Python,
+                    Java, SQL, and web technologies. Passionate about applying technical knowledge to
+                    real-world challenges and learning emerging technologies like Machine Learning and Data Analytics.
+                    Seeking opportunities to gain hands-on experience and contribute effectively to innovative teams.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="https://drive.google.com/file/d/18_IbpW69C_FXLsaXwGTOPeDxOXN5fqYm/view?usp=drivesdk"
+                        target="_blank" class="btn-secondary">
+                        <i class="fas fa-file-alt"></i> My Resume
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="3">0</div>
+                        <div class="hero-stat-label">Projects</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="10">0</div>
+                        <div class="hero-stat-label">Technologies</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number" data-count="8">0</div>
+                        <div class="hero-stat-label">CGPA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-ring"></div>
+                    <img src="assets/images/profile.png" alt="Vellanki Harshitha" class="hero-image">
+                    <div class="hero-floating-badge">
+                        <span class="badge-icon">🐍</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="hero-floating-badge">
+                        <span class="badge-icon">🤖</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="hero-floating-badge">
+                        <span class="badge-icon">📊</span>
+                        <span>Data Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about" style="background:var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-user"></i>&nbsp; Who I Am</div>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">A passionate learner on a mission to solve real-world problems with
+                    technology.</p>
+            </div>
+            <div style="max-width:900px;margin:0 auto;">
+                <div class="skill-category reveal" style="text-align:center;padding:40px;">
+                    <p style="font-size:1.1rem;line-height:1.9;color:var(--text-secondary);">
+                        I am <strong style="color:var(--accent-primary);">Vellanki Harshitha</strong>, a motivated
+                        B.Tech Computer Science student
+                        at <strong style="color:var(--text-primary);">Kalasalingam Academy of Research and Education,
+                            Tamil Nadu</strong>.
+                        With a strong academic record (CGPA: 8.6/10), I have built a solid foundation in programming,
+                        databases, and analytical problem-solving.
+                    </p>
+                    <br>
+                    <p style="font-size:1.1rem;line-height:1.9;color:var(--text-secondary);">
+                        I am experienced in developing academic projects using <strong
+                            style="color:var(--text-primary);">Python, Java, SQL</strong>,
+                        and web technologies like <strong style="color:var(--text-primary);">HTML, CSS, and
+                            JavaScript</strong>.
+                        My passion lies in applying technical knowledge to real-world challenges — from building
+                        <strong style="color:var(--text-primary);">Machine Learning models</strong> for cybersecurity to
+                        creating
+                        <strong style="color:var(--text-primary);">IoT-based smart systems</strong> for everyday life
+                        improvements.
+                        I am always eager to learn emerging technologies and collaborate with innovative teams.
+                    </p>
+                    <div style="display:flex;justify-content:center;gap:30px;margin-top:30px;flex-wrap:wrap;">
+                        <div style="text-align:center;">
+                            <div style="font-size:2rem;margin-bottom:4px;">🎓</div>
+                            <div style="font-size:0.85rem;color:var(--text-muted);">B.Tech CSE</div>
+                        </div>
+                        <div style="text-align:center;">
+                            <div style="font-size:2rem;margin-bottom:4px;">📍</div>
+                            <div style="font-size:0.85rem;color:var(--text-muted);">Tamil Nadu, India</div>
+                        </div>
+                        <div style="text-align:center;">
+                            <div style="font-size:2rem;margin-bottom:4px;">⭐</div>
+                            <div style="font-size:0.85rem;color:var(--text-muted);">8.6 CGPA</div>
+                        </div>
+                        <div style="text-align:center;">
+                            <div style="font-size:2rem;margin-bottom:4px;">💡</div>
+                            <div style="font-size:0.85rem;color:var(--text-muted);">Problem Solver</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-code"></i>&nbsp; What I Know</div>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">The languages, tools, and technologies I work with to build robust and
+                    scalable solutions.</p>
+            </div>
+            <div class="skills-grid">
+
+                <!-- Programming Languages -->
+                <div class="skill-category reveal stagger-1">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Python</span><span
+                                    class="skill-percent">90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Java</span><span
+                                    class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">SQL</span><span
+                                    class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">JavaScript</span><span
+                                    class="skill-percent">70%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category reveal stagger-2">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"><i
+                                class="fas fa-globe"></i></div>
+                        <h3 class="skill-category-title">Web Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">HTML5</span><span
+                                    class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"
+                                    style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">CSS3</span><span
+                                    class="skill-percent">82%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"
+                                    style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">JavaScript (Frontend)</span><span
+                                    class="skill-percent">70%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"
+                                    style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Responsive Design</span><span
+                                    class="skill-percent">78%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"
+                                    style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning & Data -->
+                <div class="skill-category reveal stagger-3">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#10b981,#06b6d4)"><i
+                                class="fas fa-brain"></i></div>
+                        <h3 class="skill-category-title">Machine Learning & Data</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Machine Learning</span><span
+                                    class="skill-percent">75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"
+                                    style="background:linear-gradient(135deg,#10b981,#06b6d4)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Data Analytics</span><span
+                                    class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"
+                                    style="background:linear-gradient(135deg,#10b981,#06b6d4)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Pandas / NumPy</span><span
+                                    class="skill-percent">78%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"
+                                    style="background:linear-gradient(135deg,#10b981,#06b6d4)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Scikit-Learn</span><span
+                                    class="skill-percent">72%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="72"
+                                    style="background:linear-gradient(135deg,#10b981,#06b6d4)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category reveal stagger-4">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i
+                                class="fas fa-tools"></i></div>
+                        <h3 class="skill-category-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Arduino IDE</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Eclipse</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+
+                <!-- Database & Backend -->
+                <div class="skill-category reveal stagger-5">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#a855f7,#ec4899)"><i
+                                class="fas fa-database"></i></div>
+                        <h3 class="skill-category-title">Database & Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">MySQL</span><span
+                                    class="skill-percent">85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"
+                                    style="background:linear-gradient(135deg,#a855f7,#ec4899)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Database Design</span><span
+                                    class="skill-percent">80%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"
+                                    style="background:linear-gradient(135deg,#a855f7,#ec4899)"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">SQL Queries & Joins</span><span
+                                    class="skill-percent">88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"
+                                    style="background:linear-gradient(135deg,#a855f7,#ec4899)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category reveal stagger-6">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#06b6d4,#3b82f6)"><i
+                                class="fas fa-users"></i></div>
+                        <h3 class="skill-category-title">Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Quick Learner</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Creativity</span>
+                        <span class="skill-tag">Attention to Detail</span>
+                        <span class="skill-tag">Leadership</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="section experience-section" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-graduation-cap"></i>&nbsp; My Journey</div>
+                <h2 class="section-title">Education & <span class="gradient-text">Academics</span></h2>
+                <p class="section-subtitle">My academic journey that built a strong foundation in Computer Science and
+                    analytical problem-solving.</p>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 — 2027 (Expected)</div>
+                        <h3 class="timeline-title">Bachelor of Technology — Computer Science</h3>
+                        <p class="timeline-company">Kalasalingam Academy of Research and Education, Tamil Nadu</p>
+                        <p class="timeline-description">
+                            Currently pursuing B.Tech with a CGPA of 8.6/10. Engaged in coursework covering Data
+                            Structures,
+                            Algorithms, Object-Oriented Programming, Database Management Systems, Machine Learning, and
+                            Web Technologies. Actively participating in coding competitions, technical symposiums, and
+                            hands-on project development using Python, Java, SQL, and modern web frameworks. Building a
+                            strong portfolio through academic projects in cybersecurity, IoT, and data management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 — 2023</div>
+                        <h3 class="timeline-title">Intermediate — MPC (Maths, Physics, Chemistry)</h3>
+                        <p class="timeline-company">Viswabharathi Junior College</p>
+                        <p class="timeline-description">
+                            Scored an outstanding <strong>949 out of 1000</strong> marks, demonstrating exceptional
+                            academic
+                            excellence and dedication. Developed strong analytical and mathematical reasoning
+                            skills that form the backbone of my problem-solving abilities in computer science.
+                            Active participant in science exhibitions and mathematics olympiads, consistently
+                            ranking among top performers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                        <p class="timeline-company">Nagarjuna High School</p>
+                        <p class="timeline-description">
+                            Achieved a <strong>perfect score of 600 out of 600</strong> — a testament to unwavering
+                            commitment, discipline, and academic excellence. This milestone sparked a deep interest
+                            in science and technology, setting the foundation for a career in Computer Science.
+                            Recognized as school topper and received accolades for outstanding performance across
+                            all subjects.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-rocket"></i>&nbsp; My Work</div>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Explore my academic and personal projects showcasing problem-solving with
+                    Python, ML, SQL, and IoT.</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1: URL Phishing Detection -->
+                <div class="project-card reveal stagger-1">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/ml_project.png" alt="URL Phishing Detection System"
+                            class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-Learn</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">ML</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Machine Learning • Cybersecurity</p>
+                        <h3 class="project-title">URL Phishing Detection System</h3>
+                        <p class="project-description">
+                            Developed a robust URL phishing detection system using Python and Machine Learning
+                            techniques to classify malicious links and improve online security. The model extracts
+                            features from URL structure — including domain length, presence of special characters,
+                            HTTPS status, and lexical patterns — and applies classification algorithms like
+                            Random Forest and Logistic Regression to accurately distinguish phishing URLs from
+                            legitimate ones. Achieved high accuracy in detecting fraudulent websites, contributing
+                            to safer internet browsing experiences.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link project-link-primary"><i
+                                    class="fas fa-external-link-alt"></i> View Details</a>
+                            <a href="#" class="project-link project-link-secondary"><i class="fab fa-github"></i> Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Library Management System -->
+                <div class="project-card reveal stagger-2">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/data_analytics.png" alt="Library Management System"
+                            class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">DBMS</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Database Management • Full Stack</p>
+                        <h3 class="project-title">Library Management System</h3>
+                        <p class="project-description">
+                            Designed and developed a comprehensive database-driven Library Management System
+                            using SQL and Python for efficient book tracking and user management. The system
+                            features automated issue and return processes, real-time inventory tracking, fine
+                            calculation for overdue books, member registration with role-based access, and
+                            detailed reporting with search and filter capabilities. Implemented relational
+                            database design with normalized tables, complex SQL queries involving JOIN operations,
+                            and a clean user interface for librarians to manage day-to-day operations seamlessly.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link project-link-primary"><i
+                                    class="fas fa-external-link-alt"></i> View Details</a>
+                            <a href="#" class="project-link project-link-secondary"><i class="fab fa-github"></i> Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Smart Alert Water Bottle -->
+                <div class="project-card reveal stagger-3">
+                    <div class="project-image-wrapper">
+                        <img src="assets/images/computer_vision.png" alt="Smart Alert Water Bottle"
+                            class="project-image">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Arduino</span>
+                            <span class="tech-badge">IoT</span>
+                            <span class="tech-badge">Sensors</span>
+                            <span class="tech-badge">C++</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">IoT • Embedded Systems</p>
+                        <h3 class="project-title">Smart Alert Water Bottle</h3>
+                        <p class="project-description">
+                            Built an innovative IoT-based smart water bottle system to track daily water consumption
+                            and provide timely hydration alerts using ultrasonic sensors and microcontroller logic
+                            for real-time monitoring. The system uses an Arduino microcontroller paired with water
+                            level sensors to measure consumption patterns, a buzzer for audible reminders, and
+                            LED indicators for visual cues. Features include customizable hydration schedules,
+                            daily consumption tracking, and low-water-level alerts — promoting healthier hydration
+                            habits through technology. A practical application of embedded systems and IoT concepts
+                            solving everyday health challenges.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link project-link-primary"><i
+                                    class="fas fa-external-link-alt"></i> View Details</a>
+                            <a href="#" class="project-link project-link-secondary"><i class="fab fa-github"></i> Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge"><i class="fas fa-envelope"></i>&nbsp; Get In Touch</div>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Have a project idea or want to collaborate? I'd love to hear from you. Let's
+                    build something amazing together!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="reveal-left">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <p class="contact-value"><a
+                                    href="mailto:vellankiharshitha1642@gmail.com">vellankiharshitha1642@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon" style="background:linear-gradient(135deg,#10b981,#06b6d4)"><i
+                                class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <p class="contact-value"><a href="tel:+919951167798">+91 9951167798</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon" style="background:linear-gradient(135deg,#f43f5e,#f59e0b)"><i
+                                class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <p class="contact-value">Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon" style="background:linear-gradient(135deg,#3b82f6,#8b5cf6)"><i
+                                class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <p class="contact-label">LinkedIn</p>
+                            <p class="contact-value"><a href="https://www.linkedin.com/in/vellanki-harshitha-4a2057353/"
+                                    target="_blank">Vellanki Harshitha</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required id="formName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required id="formEmail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Subject" id="formSubject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-textarea" placeholder="Your Message..." required
+                            id="formMessage"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:fit-content;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-name">Vellanki Harshitha</div>
+                <p class="footer-brand-desc">
+                    Computer Science Engineering student passionate about building innovative solutions
+                    with Python, Machine Learning, and modern web technologies. Driven by curiosity,
+                    powered by hard work, and committed to making a positive impact through technology.
+                </p>
+                <div class="footer-social" style="margin-top:20px;">
+                    <a href="https://github.com/vellankiharshitha16" class="footer-social-link" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vellanki-harshitha-4a2057353/" class="footer-social-link"
+                        aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:vellankiharshitha1642@gmail.com" class="footer-social-link" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Skills</a></li>
+                    <li><a href="#education"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Education</a>
+                    </li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Projects</a>
+                    </li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Follow Me</h4>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/vellankiharshitha16" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/vellanki-harshitha-4a2057353/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="mailto:vellankiharshitha1642@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vellanki Harshitha. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
